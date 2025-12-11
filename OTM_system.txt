@@ -1,0 +1,33 @@
+@startuml
+left to right direction
+actor "学生" as fc
+actor "教師" as fc2
+rectangle el-caampus {
+  usecase "アンケートに回答" as UC1
+  usecase "課題をダウンロード" as UC2
+  usecase "掲示板を見る" as UC3
+  usecase "試験を受ける" as UC4
+  usecase "試験を受ける" as UC5
+}
+rectangle universalpasport {
+  usecase "シラバス参照" as UC6
+  usecase "履修登録" as UC7
+  usecase "成績確認" as UC8
+  usecase "時間割" as UC9
+  usecase "資格希望" as UC10
+}
+fc --> UC1
+fc --> UC2
+fc --> UC3
+fc --> UC4
+fc --> UC5
+fc --> UC8
+fc --> UC6
+fc --> UC9
+fc --> UC10
+fc --> UC7
+fc2 --> UC3
+fc2 --> UC6
+fc2 --> UC8
+fc2 --> UC9
+@enduml
