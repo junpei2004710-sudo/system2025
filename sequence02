@@ -1,0 +1,10 @@
+@startuml
+participant mainfunction as "main function"
+participant calculate as "calculate"
+participant getinput as "getinput"
+
+mainfunction -> calculate:データを設置
+calculate -> getinput: 入力データを要求
+getinput-->calculate:入力データ
+calculate-->mainfunction: 計算結果
+@enduml
