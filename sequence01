@@ -1,0 +1,10 @@
+@startuml
+actor client
+participant server as "サーバー"
+participant databese as "データベース"
+
+client -> server:データを要求
+server->databese:問い合わせを要求
+databese-->server:結果を返す
+server-->client: データをクライアントに返す
+@enduml
